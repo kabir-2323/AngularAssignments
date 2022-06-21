@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">              
+  <title>Customers</title>
+</head>
+<body>
+  <select (change)="setDropDownValue($event)">
+    <option value="">Choose</option>
+    <option value="javadeveloper">C++ Developer</option>
+    <option value="teacher">Doctor</option>
+    <option value="lawyer">Dancer</option>
+    
+  </select>
+  <div [ngSwitch]='dropDownValue'>
+    <h3 *ngSwitchCase="'javadeveloper'">Tushar</h3>
+    <h3 *ngSwitchCase="'teacher'">Nishant</h3>
+    <h3 *ngSwitchCase="'lawyer'"> Harsh</h3>
+    <h3 *ngSwitchDefault="" >Nothing selected</h3>
+  
+  </div>
+
+ 
+</body>
+</html>

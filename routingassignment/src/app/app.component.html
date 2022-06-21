@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">              
+  <title>Customers</title>
+</head>
+<body>
+  <select (change)="setDropDownValue($event)">
+    <option value="">Choose</option>
+    <option value="javadeveloper">Java Developer</option>
+    <option value="teacher">Teacher</option>
+    <option value="lawyer">Lawyer</option>
+    
+  </select>
+  <div [ngSwitch]='dropDownValue'>
+    <h3 *ngSwitchCase="'javadeveloper'">Kabir</h3>
+    <h3 *ngSwitchCase="'teacher'">ABC</h3>
+    <h3 *ngSwitchCase="'lawyer'"> XYZ</h3>
+    <h3 *ngSwitchDefault="" >Nothing selected</h3>
+  
+  </div>
+
+ 
+</body>
+</html> -->
+
+<h2>Routing Assignment</h2>
+
+<ul>
+  <li> <a [routerLink]="['/employee']">Employee</a><br></li> 
+  </ul>
+
+<router-outlet></router-outlet>
